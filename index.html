@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Data Analyst Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">My Portfolio</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact" class="btn-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Data Analyst Portfolio</h1>
+            <p class="subtitle">データを「価値」に変え、ビジネスの意思決定を支える。</p>
+            <p class="description">
+                現在、新潟県の人口動態に関するデータ分析を研究中。<br>
+                東大GCI講座にてPythonによる実践的な機械学習を習得しました。
+            </p>
+            <div class="hero-badges">
+                <span class="badge gold"><i class="fas fa-trophy"></i> GCI 2025 コンペ上位10%</span>
+                <span class="badge blue"><i class="fas fa-chart-line"></i> AI Business Insight 修了</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-gray">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python skill-icon"></i>
+                    <h3>Python</h3>
+                    <p>Pandas, NumPy, Matplotlib, Scikit-learn</p>
+                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database skill-icon"></i>
+                    <h3>SQL / Data</h3>
+                    <p>データ抽出・加工, 基礎統計学</p>
+                    <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code-branch skill-icon"></i>
+                    <h3>Tools</h3>
+                    <p>Git/GitHub, Jupyter Notebook, Tableau</p>
+                    <div class="progress-bar"><div class="progress" style="width: 80%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-card featured">
+                <div class="project-info">
+                    <span class="tag">Academic Research</span>
+                    <h3>新潟県の人口動態分析と未来予測</h3>
+                    <p class="project-desc">
+                        e-Statのオープンデータを使用し、新潟県の人口流出の主要因を分析。
+                        時系列分析と回帰モデルを用いて、2030年の人口推移を予測し、
+                        特定の産業支援による流出抑制効果をシミュレーションしました。
+                    </p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>Pandas</li>
+                        <li>Folium (地図可視化)</li>
+                        <li>Statsmodels</li>
+                    </ul>
+                    <a href="#" class="btn-outline">詳細を見る <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-image-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Analysis Visuals</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <span class="tag">Competition</span>
+                    <h3>金融データの与信審査予測モデル</h3>
+                    <p class="project-desc">
+                        東京大学GCI講座のコンペティションにて、約xxx人中上位10%の精度（AUCスコア 0.xx）を達成。
+                        不均衡データの処理(SMOTE)と、LightGBMのハイパーパラメータチューニングに注力しました。
+                    </p>
+                    <ul class="tech-stack">
+                        <li>Python</li>
+                        <li>Scikit-learn</li>
+                        <li>LightGBM</li>
+                    </ul>
+                    <a href="#" class="btn-outline">コードを見る (GitHub) <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>ポートフォリオをご覧いただきありがとうございます。<br>詳細なコード等はGitHubにて公開しています。</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i> Email</a>
+            </div>
+            <p class="copyright">&copy; 2025 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
